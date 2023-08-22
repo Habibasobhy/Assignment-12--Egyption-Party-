@@ -1,0 +1,324 @@
+:root{
+    /* * Colors */
+
+    --clr-layer : 214, 46, 51;
+    --clr-white : #fff;
+    --clr-light-grey : #777;
+    --clr-dark-grey : #444;
+}
+
+body{
+    overflow: hidden;
+    color: #212529;
+}
+
+/* &              START Loading STYLE             */
+#loading{
+    height: 100vh;
+    background-color: rgb(252, 103, 17);
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+}
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+/* &              END Loading STYLE             */
+
+/* ^==============================================================^ */
+
+/* &              START HOME STYLE             */
+
+#home{
+    background-image: linear-gradient(
+        rgba(var(--clr-layer),0.6),
+        rgba(var(--clr-layer),0.6)),
+        url('../Images/events-heavenly-header.jpg');
+
+        background-size: 100% 100%;
+        background-position: center;
+        height: 660px;
+        overflow-y: hidden;
+}
+
+#home .home-content{
+    margin-top: 200px;
+}
+
+#home .home-content h2{
+    font-size: 60px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#sideBar .sideBar-inner{
+    height: 100%;
+    width: 250px;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 60px;
+    cursor: pointer;
+}
+
+#sideBar .sideBar-inner i{
+    font-size: 23px;
+    top: 40px;
+    right: 37px;
+    transition: 0.3s color;
+}
+
+#sideBar .sideBar-inner a{
+    padding: 20px 8px 20px 32px;
+    font-size: 25px;
+    transition: 0.3s color;
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+#sideBar .sideBar-inner i:hover,
+#sideBar .sideBar-inner a:hover{
+    color: rgba(var(--clr-layer), 0.4);
+}
+
+#sideBar .sideBar-open{
+    font-size: 30px;
+    cursor: pointer;
+}
+/* &              END HOME STYLE             */
+
+/* ^==============================================================^ */
+
+/* &              START sliderDown STYLE             */
+
+#sliderDown .slider h3{
+  background-color: rgba(var(--clr-layer), 0.6);
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 0;
+  color: var(--clr-white);
+}
+
+#sliderDown .slider p{
+  background-color: rgb(204, 204, 204);
+  padding: 10px;
+  margin-bottom: 0;
+  color: #212529;
+}
+
+#sliderDown .slider .inner{
+  display: none;
+}
+
+/* &              END sliderDown STYLE            */
+
+/* ^==============================================================^ */
+
+/* &              Start Count STYLE             */
+
+#count{
+    background-image: linear-gradient(
+        rgba(var(--clr-layer),0.6),
+        rgba(var(--clr-layer),0.6)),
+        url('../Images/invitation-2508607__340.jpg');
+
+  min-height: 330px;
+  background-size: cover;
+  background-position: center;
+}
+
+#count .container .days,
+.hours,.minutes,.seconds{
+  padding: 50px;
+  border: 1px solid #FFF;
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--clr-white);
+}
+
+#count .container .demo{
+  display: none;
+}
+
+/* &              END Count STYLE                   */
+
+/* ^==============================================================^ */
+
+/* &              Start Contact STYLE             */
+
+#contact .container .contact-head h2{
+  text-transform: uppercase;
+  font-size: 35px;
+  color: var(--clr-dark-grey);
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+#contact .container .contact-head p{
+  color: var(--clr-light-grey);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#contact .container .contact-info h3{
+  color: var(--clr-dark-grey);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+#contact .container .contact-info p{
+  font-size: 16px;
+    line-height: 26px;
+    color: var(--clr-light-grey);
+}
+
+#contact .container .contact-us{
+  color: var(--clr-light-grey);
+}
+
+#contact .container .contact-us div{
+  margin-bottom: 35px;
+}
+
+#contact .container .contact-social-icons{
+  margin-top: 60px;
+}
+
+#contact .container .contact-social-icons .icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #999;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+#contact .container .contact-social-icons .icon:hover{
+  background-color: #D62E33;
+  border: 1px solid #D62E33;
+}
+
+#contact .container .contact-social-icons .icon:hover i{
+  color: var(--clr-white);
+}
+
+#contact .container .contact-social-icons .icon i{
+  color: var(--clr-light-grey);
+}
+
+#contact .container .contact-form .form-control{
+  color: #495057 !important;
+}
+
+#contact .container .contact-form p{
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+#contact .container .contact-form span{
+  font-size: 20px;
+  color: #D62E33;
+  font-weight: 600;
+}
+
+#contact .container .contact-form textarea{
+  height: 200px;
+  resize: vertical;
+}
+
+#contact .container .contact-form .btn{
+  background-color: #D62E33;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+
+@media screen and (max-width:768px){
+  #contact .container .contact-form {
+    margin-top: 30px;
+  }
+}
+
+/* &              End Contact STYLE             */
